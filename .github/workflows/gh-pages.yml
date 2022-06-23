@@ -15,7 +15,7 @@ jobs:
 
     - run: rustup target add wasm32-unknown-unknown
     - run: cargo install trunk
-    - run: trunk build --release
+    - run: trunk build --release --public-url janken-web
 
     - run: cp -r ./dist/ ./public/
 
