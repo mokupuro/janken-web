@@ -6,7 +6,7 @@ use components::select_button::SelectButton;
 #[function_component(App)]
 fn app() -> Html {
     let selected = use_state(|| 0);
-    let result = use_state(|| 0);
+    let result = use_state(|| 3);
 
     html! {
         <>
@@ -23,11 +23,15 @@ fn app() -> Html {
                             <h1 class="text-3xl font-bold">{"負け！"}</h1>
                         </div>
                     }
-                } else {
+                } else if *result == 2 {
                     html! {
                         <div class="text-center">
                             <h1 class="text-3xl font-bold">{"引き分け！"}</h1>
                         </div>
+                    }
+                } else {
+                    html! {
+                        {""}
                     }
                 } }
             </div>
