@@ -9,7 +9,9 @@ fn app() -> Html {
 
     html! {
         <div class="flex justify-center mt-3">
-            <SelectButton selected={ selected.clone() } />
+            <SelectButton selected={ selected.clone() } hand_type="グー" />
+            <SelectButton selected={ selected.clone() } hand_type="チョキ" />
+            <SelectButton selected={ selected.clone() } hand_type="パー" />
         </div>
     }
 }
