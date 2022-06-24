@@ -10,7 +10,7 @@ pub struct SelectButtonProps {
 
 #[function_component(SelectButton)]
 pub fn select_button(props: &SelectButtonProps) -> Html {
-    // FIXME: 数回は正常にrandが動くが、途中からwasmでエラーが出るのでその修正が必要
+    // FIXME: 同じボタンを押して際に、数回は動くが途中から値が変わらなくなるのでその修正
     let onclick = {
         let result = props.result.clone();
         let random_int = rand::thread_rng().gen_range(0, 3);
