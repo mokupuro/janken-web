@@ -14,7 +14,7 @@ pub fn select_button(props: &SelectButtonProps) -> Html {
     let onclick = {
         let result = props.result.clone();
         let random_int = rand::thread_rng().gen_range(0, 3);
-        Callback::once(move |_| result.set(random_int as i32))
+        Callback::from(move |_| result.set(random_int as i32))
     };
 
     html! {
