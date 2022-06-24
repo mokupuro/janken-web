@@ -36,9 +36,9 @@ fn app() -> Html {
                 } }
             </div>
             <div class="flex justify-center mt-3">
-                <SelectButton selected={ selected.clone() } hand_type="グー" />
-                <SelectButton selected={ selected.clone() } hand_type="チョキ" />
-                <SelectButton selected={ selected.clone() } hand_type="パー" />
+                <SelectButton selected={ selected.clone() } hand_type="グー" result={ result.clone() } />
+                <SelectButton selected={ selected.clone() } hand_type="チョキ" result={ result.clone() } />
+                <SelectButton selected={ selected.clone() } hand_type="パー" result={ result.clone() } />
             </div>
         </>
     }
