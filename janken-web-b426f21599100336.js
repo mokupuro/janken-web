@@ -564,7 +564,7 @@ function initSync(bytes) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('janken-web-4e06940552e43055_bg.wasm', import.meta.url);
+        input = new URL('janken-web-b426f21599100336_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
