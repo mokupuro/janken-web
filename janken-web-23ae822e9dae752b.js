@@ -527,8 +527,8 @@ function getImports() {
     imports.wbg.__wbindgen_throw = function(arg0, arg1) {
         throw new Error(getStringFromWasm0(arg0, arg1));
     };
-    imports.wbg.__wbindgen_closure_wrapper274 = function(arg0, arg1, arg2) {
-        const ret = makeClosure(arg0, arg1, 119, __wbg_adapter_20);
+    imports.wbg.__wbindgen_closure_wrapper276 = function(arg0, arg1, arg2) {
+        const ret = makeClosure(arg0, arg1, 121, __wbg_adapter_20);
         return addHeapObject(ret);
     };
 
@@ -564,7 +564,7 @@ function initSync(bytes) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('janken-web-b426f21599100336_bg.wasm', import.meta.url);
+        input = new URL('janken-web-23ae822e9dae752b_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
