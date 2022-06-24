@@ -13,7 +13,7 @@ pub fn select_button(props: &SelectButtonProps) -> Html {
     // FIXME: 数回は正常にrandが動くが、途中からwasmでエラーが出るのでその修正が必要
     let onclick = {
         let result = props.result.clone();
-        let random_int = rand::thread_rng().gen_range(0, 2);
+        let random_int = rand::thread_rng().gen_range(0, 3);
         Callback::once(move |_| result.set(random_int as i32))
     };
 
